@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>currency conveter</title>
+    <style>
+    input
+        {
+            width: 100;
+            height: 30;
+            
+        }
+        label
+        {
+           
+            font-size: 29;
+            font-family: monospace;
+        }
+    </style>
+    </head>
+    <script>
+    function abc()
+        {
+            var x= parseInt(document.getElementById("a1").value);
+          var z=  document.getElementById("s1").value;
+            if(z =="1" )
+            {
+                document.getElementById("a2").value=x*71.1223;
+            }
+             if(z =="2" )
+            {
+                document.getElementById("a2").value=x*77.98;
+            }
+             if(z =="3" )
+            {
+                document.getElementById("a2").value=x*0.65;
+            }
+             if(z =="4" )
+            {
+                document.getElementById("a2").value=x*53;
+            }
+        }
+    
+    </script>
+    
+<body style="background-image: url(maxresdefault.jpg)"><center>
+    <img style="height: 300; width: 950" src="pa1.jpeg">
+  <div style="padding-top:50">  <h1 style="color: aqua">Currency Conveter </h1>
+   <label style="color: aqua">Enter Currency</label>
+      <input id="a1" placeholder="currency" type="text">
+   
+    
+    
+        <p   style="background-color: aqua";>
+    <label >select currency TO Conveter</label>
+        <select style="height: 30; width: 100" id="s1" onclick="abc()">
+    <option value="1">dollar</option>
+    <option value="2">ero</option>
+    <option value="3">yen</option>
+    <option value="4">cad doller</option>
+    </select>
+     </p>
+      <label style="color: aqua">Currency In INR</label>
+    <input id="a2" placeholder="currency" type="text">
+    
+    </div>
+    </center>
+</body>
+</html>
